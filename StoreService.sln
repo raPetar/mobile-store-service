@@ -3,9 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30330.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreService", "StoreService\StoreService.csproj", "{5C83A362-51F5-4541-A944-C2DC85C52758}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StoreService", "StoreService\StoreService.csproj", "{5C83A362-51F5-4541-A944-C2DC85C52758}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreService.DataAccess", "StoreService.DataAccess\StoreService.DataAccess.csproj", "{645AC94B-CE1A-4BD5-9D77-52ADC5A960D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StoreService.DataAccess", "StoreService.DataAccess\StoreService.DataAccess.csproj", "{645AC94B-CE1A-4BD5-9D77-52ADC5A960D9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DBInitScript", "DBInitScript", "{8468A944-9B97-4986-B499-BB4E9B2A101E}"
+	ProjectSection(SolutionItems) = preProject
+		MobileStoreInit.sql = MobileStoreInit.sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
