@@ -14,6 +14,7 @@ This is an WEB API for the [mobile-app-store](https://github.com/raPetar/mobile-
 URL Params: 
 * /products
 * /products/{id}
+* /products/search/{keyword}
 * /reviews/{id}
 * /questions/{id}
 * /category
@@ -38,3 +39,4 @@ URL Params:
     "password":"1234"
 }
  ```
+
