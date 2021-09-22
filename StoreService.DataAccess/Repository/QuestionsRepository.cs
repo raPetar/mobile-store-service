@@ -32,26 +32,20 @@ namespace ShopService.DataAccess.Repository
                 QuestionList list = new QuestionList();
                 list.questionList = new List<Question>();
 
-                foreach (var item in result)
+                foreach (var q in result)
                 {
-                    Question review = new Question();
+                    Question question = new Question();
 
-                    review.QuestionID = item.QuestionID;
-                    review.MainThread = item.MainThread;
-                    review.UserName = item.UserName;
-                    review.Text = item.Text;
-                    list.questionList.Add(review);
-
+                    question.QuestionID = q.QuestionID;
+                    question.MainThread = q.MainThread;
+                    question.UserName = q.UserName;
+                    question.Text = q.Text;
+                    list.questionList.Add(question);
                 }
 
                 return list;
             }
 
-        }
-
-        public Task<Question> postQuestion(int productID)
-        {
-            throw new NotImplementedException();
         }
     }
 }

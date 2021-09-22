@@ -4,10 +4,8 @@ using System.Text;
 
 namespace ShopService.DataAccess.Models
 {
-   public class ReviewList
+    public class ReviewList
     {
         public List<Review> reviewList { get; set; }
-
-
     }
 }

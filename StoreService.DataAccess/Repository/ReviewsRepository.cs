@@ -26,7 +26,6 @@ namespace ShopService.DataAccess.Repository
             using (var connection = new SqlConnection(connectionString))
             {
                 connection.Open();
-
                 var result = connection.Query<Review>("dbo.RetrieveReviews @ProductID", new { ProductID = productID });
                 ReviewList list = new ReviewList();
                 list.reviewList = new List<Review>();
@@ -40,20 +39,10 @@ namespace ShopService.DataAccess.Repository
                     review.UserName = item.UserName;
                     review.Text = item.Text;
                     list.reviewList.Add(review);
-
                 }
-
                 return list;
             }
-
-        }
-
-        public Task<Review> postReview(int productID)
-        {
-            throw new NotImplementedException();
         }
     }
-
-
 }
 

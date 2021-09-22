@@ -4,8 +4,8 @@ using System.Text;
 
 namespace ShopService.DataAccess.Models
 {
-   public class OrderList
+    public class OrderList
     {
-      public  List<Order> orderList { get; set; }
+        public List<Order> orderList { get; set; }
     }
 }

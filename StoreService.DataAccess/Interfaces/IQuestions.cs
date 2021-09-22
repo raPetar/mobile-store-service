@@ -9,10 +9,6 @@ namespace ShopService.DataAccess.Interfaces
 {
   public  interface IQuestions
     {
-
         QuestionList GetQuestions(int productID);
-
-        Task<Question> postQuestion(int productID);
-
     }
 }

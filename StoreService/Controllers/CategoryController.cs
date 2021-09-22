@@ -22,17 +22,12 @@ namespace ShopService.Controllers
             configuration = _configuration;
         }
 
-        // GET: api/<CategoryController>
         [HttpGet]
         public async Task<CategoryList> Get()
         {
             CategoryRepository categoryRepository = new CategoryRepository(configuration);
-
             var result = await categoryRepository.RetrieveCategories();
             return result;
-
-
-
         }
     }
 }

@@ -28,7 +28,6 @@ namespace ShopService.Controllers
             string message = repo.postOrder(order);
             OrderNumber orderNum = new OrderNumber();
             orderNum.orderNumber = message;
-
             return orderNum;
         }
 
@@ -41,12 +40,11 @@ namespace ShopService.Controllers
         }
 
         [HttpGet("details/{orderNumber}")]
-        public async Task<ProductList> GetDetails(string orderNumber) {
-
+        public async Task<ProductList> GetDetails(string orderNumber)
+        {
             OrdersRepository repository = new OrdersRepository(_configuration);
             var result = await repository.getOrderDetails(orderNumber);
             return result;
-        
         }
     }
 }

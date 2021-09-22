@@ -22,16 +22,13 @@ namespace ShopService.Controllers
         {
             _configuration = configuration;
         }
+
         [HttpGet("{id}")]
         public ReviewList GetByID(int id)
         {
-
             ReviewsRepository repository = new ReviewsRepository(_configuration);
             var result = repository.GetReviews(id);
-
             return result;
-
-
         }
 
     }

@@ -15,7 +15,6 @@ namespace ShopService.Controllers
     [ApiController]
     public class QuestionsController : ControllerBase
     {
-
         private readonly IConfiguration _configuration;
 
         public QuestionsController(IConfiguration configuration)
@@ -26,29 +25,9 @@ namespace ShopService.Controllers
         [HttpGet("{id}")]
         public  QuestionList GetByID(int id)
         {
-
             QuestionsRepository repository = new QuestionsRepository(_configuration);
             var result =  repository.GetQuestions(id);
-
             return result;
-
-
-        }
-
-        // POST api/<ReviewsController>
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
-
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
         }
     }
 }

@@ -8,6 +8,6 @@ namespace ShopService.DataAccess.Models
     public class QuestionList
     {
 
-       public  List<Question> questionList { get; set; }
+        public List<Question> questionList { get; set; }
     }
 }

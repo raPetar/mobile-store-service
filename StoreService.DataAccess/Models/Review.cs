@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ShopService.DataAccess.Models
 {
-   public class Review
+    public class Review
     {
 
         public int ReviewID { get; set; }

@@ -14,7 +14,8 @@ namespace ShopService.DataAccess.Repository
     {
         private readonly IConfiguration configuration;
 
-        public CategoryRepository(IConfiguration _configuration) {
+        public CategoryRepository(IConfiguration _configuration)
+        {
             configuration = _configuration;
         }
 
@@ -23,7 +24,7 @@ namespace ShopService.DataAccess.Repository
             string connectionString = configuration.GetConnectionString("DefaultConnection");
             using (var connection = new SqlConnection(connectionString))
             {
-                var result =  await connection.QueryAsync<Category>("dbo.RetrieveCategories");
+                var result = await connection.QueryAsync<Category>("dbo.RetrieveCategories");
                 CategoryList category = new CategoryList();
                 category.categoryList = new List<Category>();
 
@@ -37,8 +38,6 @@ namespace ShopService.DataAccess.Repository
                 }
                 return category;
             }
-            
-
         }
     }
 }

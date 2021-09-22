@@ -27,7 +27,6 @@ namespace ShopService.DataAccess.Repository
             string connectionString = _configuration.GetConnectionString("DefaultConnection");
             using (var connection = new SqlConnection(connectionString))
             {
-               
                 List<Product> products = new List<Product>();
                 var result = await connection.QueryAsync<Product>("dbo.RetrieveOrderDetails @OrderNumber", new { orderNumber });
 
@@ -42,16 +41,11 @@ namespace ShopService.DataAccess.Repository
                     product.Name = p.Name;
                     product.Description = p.Description;
                     product.Price = p.Price;
-              
-                   
                     productList.TotalSum = p.TotalSum.ToString();
 
                     products.Add(product);
                 }
-                
-
                 return productList;
-                    
             }
         }
 

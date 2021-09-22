@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace ShopService.DataAccess.Interfaces
 {
- public interface  ICategory
+    public interface ICategory
     {
         Task<CategoryList> RetrieveCategories();
-      
     }
 }

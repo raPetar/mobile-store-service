@@ -8,10 +8,6 @@ namespace ShopService.DataAccess.Interfaces
 {
     public interface IReviews
     {
-
         ReviewList GetReviews(int productID);
-
-        Task<Review> postReview(int productID);
-
     }
 }

@@ -10,7 +10,7 @@ namespace ShopService.DataAccess.Interfaces
     {
         string postOrder(Order order);
 
-       Task<OrderList> getOrders(string userName);
+        Task<OrderList> getOrders(string userName);
 
         Task<ProductList> getOrderDetails(string orderNumber);
     }
