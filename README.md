@@ -1,5 +1,4 @@
 # mobile-store-service
- API for mobile-app-store project
 
 This is an WEB API for the [mobile-app-store](https://github.com/raPetar/mobile-store-service) project, developed in .net core 3.1
 
