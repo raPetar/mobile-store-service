@@ -1,23 +1,23 @@
 ﻿USE [master]
 GO
-CREATE DATABASE [MobileStore]
+/****** Object:  Database [MobileShop]    Script Date: 9/22/2021 8:13:41 PM ******/
+CREATE DATABASE [MobileStore1]
 GO
-USE [MobileStore]
-GO
+USE [MobileStore1]
 
 CREATE TABLE [dbo].[Categories](
 	[CategoryID] [int] IDENTITY(1,1) NOT NULL,
 	[Name] [nvarchar](50) NULL
 ) 
-GO
 
+GO
 CREATE TABLE [dbo].[Images](
 	[ImageID] [int] IDENTITY(1,1) NOT NULL,
 	[ProductID] [int] NOT NULL,
 	[url] [nvarchar](max) NULL,
 )
-GO
 
+GO
 CREATE TABLE [dbo].[OrderProducts](
 	[ID] [int] IDENTITY(1,1) NOT NULL,
 	[OrderID] [int] NOT NULL,
@@ -86,7 +86,9 @@ CREATE TABLE [dbo].[Users](
 	[PhoneNumber] [nvarchar](15) NULL,
 	[Email] [nvarchar](320) NULL,
 )
+
 GO
+
 
 ALTER TABLE [dbo].[Users]
 ADD PRIMARY KEY ([UserID])
@@ -143,10 +145,8 @@ ALTER TABLE [dbo].[UserReviews]
 ADD CONSTRAINT FK_Reviews_Users FOREIGN KEY ([UserID]) REFERENCES Users([UserID])
 GO
 
------------------------------------
------------------------------------
------------------------------------
------------------------------------
+
+
 
 CREATE proc [dbo].[GetProductByName]
 @ProductName nvarchar(50)
@@ -248,18 +248,24 @@ CREATE proc [dbo].[RetrieveBrowseProducts]
 @GetNextBrowseProducts int
 as
 begin
+
 select top 4 * from Products
 where ProductID >  @GetNextBrowseProducts
 end
 GO
 
+
+
 create proc [dbo].[RetrieveCategories]
+
 as 
+
 select * from Categories
 GO
 
 CREATE proc [dbo].[RetrieveOrderDetails]
 @OrderNumber nvarchar(36) 
+
 as
 begin
 
@@ -271,6 +277,9 @@ select p.ProductID, p.CategoryID, p.MainImage, p.Name, p.Description, p.Price,o.
 inner join
 OrderProducts as o  on o.ProductID = p.ProductID 
 where o.OrderID = @OrderID
+
+
+
 end
 GO
 
@@ -300,6 +309,7 @@ create proc [dbo].[RetrieveProductsByCategory]
 as
 
 select * from Products as p where p.CategoryID = @CategoryID
+
 GO
 
 
@@ -319,6 +329,7 @@ r inner join Users as u on r.UserID = u.UserID where r.ProductID = @ProductID
 
 end
 GO
+
 
 CREATE proc [dbo].[RetrieveTopPick]
 as
@@ -344,14 +355,15 @@ CREATE PROC [dbo].[ValidateUser]
 @UserName nvarchar(20),
 @Password nvarchar(20)
 as
+
+
 Select  u.UserName, u.FirstName, u.LastName, u.PhoneNumber, u.Email from Users as u, Passwords as p where u.UserName = @UserName and 
 p.Password = HASHBYTES('SHA2_512', @Password + CAST(p.Salt as nvarchar(36)))
+ 
+
 GO
 
------------------------------------
------------------------------------
------------------------------------
------------------------------------
+
 
 
 
@@ -391,7 +403,7 @@ GO
 INSERT [dbo].[Products] (  [CategoryID], [MainImage], [Name], [Description], [Price]) VALUES (4, N'https://image.shutterstock.com/image-illustration/glass-water-isolated-illustration-260nw-185433806.jpg', N'Drinking Glass', N'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris semper nec turpis vel volutpat. Vestibulum vestibulum lectus eget orci cursus consectetur. Sed sed tortor dui. Nullam non urna in metus sagittis dapibus vel id velit. Aliquam dictum odio non metus porttitor, vitae ultrices nisi imperdiet. In placerat viverra diam vitae aliquet.', 15.0000)
 GO
 INSERT [dbo].[Products] (  [CategoryID], [MainImage], [Name], [Description], [Price]) VALUES ( 4, N'https://image.shutterstock.com/image-photo/urban-biker-260nw-98638544.jpg', N'Bicycle', N'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris semper nec turpis vel volutpat. Vestibulum vestibulum lectus eget orci cursus consectetur. Sed sed tortor dui. Nullam non urna in metus sagittis dapibus vel id velit. Aliquam dictum odio non metus porttitor, vitae ultrices nisi imperdiet. In placerat viverra diam vitae aliquet.', 270.0000)
-GO
+
 
 INSERT [dbo].[Images] (   [ProductID], [url]) VALUES ( 1, N'https://image.shutterstock.com/image-photo/gaming-pc-rgb-led-lights-600w-1618645462.jpg')
 GO
@@ -462,8 +474,9 @@ GO
 INSERT [dbo].[Images] ( [ProductID],   [url]) VALUES (11, N'https://image.shutterstock.com/image-photo/locked-black-bicycle-parked-on-600w-1458007466.jpg')
 GO
 
-INSERT [dbo].[Users] ( [UserName], [FirstName], [LastName], [PhoneNumber], [Email]) VALUES (N'admin', N'Lorem', N'Ipsum', N'+381 61 1234567', N'lorem@ipsum.com')
-GO
+
+
+exec RegisterUser 'admin',  N'Lorem', N'Ipsum',  N'+381 61 1234567', N'lorem@ipsum.com', '1234'
 
 exec InsertQuestions 0, 1, 1,'This is my first question of this product'
 exec InsertQuestions 0, 1, 1,'This is my second question of this product'
@@ -703,6 +716,7 @@ exec InsertReviews 0, 3, 1,'This is my fourteenth review of this product'
 exec InsertReviews 0, 3, 1,'This is my fifteenth review of this product'
 GO
 
+
 exec InsertReviews 0, 3, 1,'This is my first review of this product'
 exec InsertReviews 0, 3, 1,'This is my second review of this product'
 exec InsertReviews 0, 3, 1,'This is my third review of this product'
@@ -858,3 +872,4 @@ exec InsertReviews 0, 11, 1,'This is my thirteenth review of this product'
 exec InsertReviews 0, 11, 1,'This is my fourteenth review of this product'
 exec InsertReviews 0, 11, 1,'This is my fifteenth review of this product'
 GO
+
