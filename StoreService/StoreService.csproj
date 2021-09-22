@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>61178ddd-cb8e-48d8-8c3b-aa83f590ac92</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StoreService.DataAccess\StoreService.DataAccess.csproj" />
+  </ItemGroup>
+
+
+</Project>

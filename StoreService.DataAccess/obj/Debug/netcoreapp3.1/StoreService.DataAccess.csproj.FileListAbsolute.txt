@@ -1,0 +1,10 @@
+D:\GitHubRepo\mobile-store-service\StoreService.DataAccess\bin\Debug\netcoreapp3.1\StoreService.DataAccess.deps.json
+D:\GitHubRepo\mobile-store-service\StoreService.DataAccess\bin\Debug\netcoreapp3.1\StoreService.DataAccess.dll
+D:\GitHubRepo\mobile-store-service\StoreService.DataAccess\bin\Debug\netcoreapp3.1\StoreService.DataAccess.pdb
+D:\GitHubRepo\mobile-store-service\StoreService.DataAccess\obj\Debug\netcoreapp3.1\StoreService.DataAccess.csproj.AssemblyReference.cache
+D:\GitHubRepo\mobile-store-service\StoreService.DataAccess\obj\Debug\netcoreapp3.1\StoreService.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHubRepo\mobile-store-service\StoreService.DataAccess\obj\Debug\netcoreapp3.1\StoreService.DataAccess.AssemblyInfoInputs.cache
+D:\GitHubRepo\mobile-store-service\StoreService.DataAccess\obj\Debug\netcoreapp3.1\StoreService.DataAccess.AssemblyInfo.cs
+D:\GitHubRepo\mobile-store-service\StoreService.DataAccess\obj\Debug\netcoreapp3.1\StoreService.DataAccess.csproj.CoreCompileInputs.cache
+D:\GitHubRepo\mobile-store-service\StoreService.DataAccess\obj\Debug\netcoreapp3.1\StoreService.DataAccess.dll
+D:\GitHubRepo\mobile-store-service\StoreService.DataAccess\obj\Debug\netcoreapp3.1\StoreService.DataAccess.pdb

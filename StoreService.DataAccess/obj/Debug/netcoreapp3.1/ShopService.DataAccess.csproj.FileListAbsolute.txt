@@ -1,0 +1,18 @@
+E:\VSProjects\ShopService\ShopService.DataAccess\bin\Debug\netcoreapp3.1\ShopService.DataAccess.deps.json
+E:\VSProjects\ShopService\ShopService.DataAccess\bin\Debug\netcoreapp3.1\ShopService.DataAccess.dll
+E:\VSProjects\ShopService\ShopService.DataAccess\bin\Debug\netcoreapp3.1\ShopService.DataAccess.pdb
+E:\VSProjects\ShopService\ShopService.DataAccess\obj\Debug\netcoreapp3.1\ShopService.DataAccess.AssemblyInfoInputs.cache
+E:\VSProjects\ShopService\ShopService.DataAccess\obj\Debug\netcoreapp3.1\ShopService.DataAccess.AssemblyInfo.cs
+E:\VSProjects\ShopService\ShopService.DataAccess\obj\Debug\netcoreapp3.1\ShopService.DataAccess.dll
+E:\VSProjects\ShopService\ShopService.DataAccess\obj\Debug\netcoreapp3.1\ShopService.DataAccess.pdb
+E:\VSProjects\ShopService\ShopService.DataAccess\obj\Debug\netcoreapp3.1\ShopService.DataAccess.csprojAssemblyReference.cache
+E:\VSProjects\ShopService\ShopService.DataAccess\obj\Debug\netcoreapp3.1\ShopService.DataAccess.csproj.CoreCompileInputs.cache
+E:\Visual Studio Projects\ShopService\ShopService.DataAccess\obj\Debug\netcoreapp3.1\ShopService.DataAccess.AssemblyInfoInputs.cache
+E:\Visual Studio Projects\ShopService\ShopService.DataAccess\obj\Debug\netcoreapp3.1\ShopService.DataAccess.AssemblyInfo.cs
+E:\Visual Studio Projects\ShopService\ShopService.DataAccess\obj\Debug\netcoreapp3.1\ShopService.DataAccess.csproj.CoreCompileInputs.cache
+E:\Visual Studio Projects\ShopService\ShopService.DataAccess\bin\Debug\netcoreapp3.1\ShopService.DataAccess.deps.json
+E:\Visual Studio Projects\ShopService\ShopService.DataAccess\bin\Debug\netcoreapp3.1\ShopService.DataAccess.dll
+E:\Visual Studio Projects\ShopService\ShopService.DataAccess\bin\Debug\netcoreapp3.1\ShopService.DataAccess.pdb
+E:\Visual Studio Projects\ShopService\ShopService.DataAccess\obj\Debug\netcoreapp3.1\ShopService.DataAccess.dll
+E:\Visual Studio Projects\ShopService\ShopService.DataAccess\obj\Debug\netcoreapp3.1\ShopService.DataAccess.pdb
+E:\Visual Studio Projects\ShopService\ShopService.DataAccess\obj\Debug\netcoreapp3.1\ShopService.DataAccess.csproj.AssemblyReference.cache
