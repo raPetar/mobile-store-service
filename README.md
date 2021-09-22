@@ -20,7 +20,7 @@ URL Params:
 * /category
 
 **If using postman agent on local machine you can send additonal params from the body as JSON**
-1. POST param {url}/users/login 
+* POST param {url}/users/login 
    
  ```  
  {
@@ -28,7 +28,7 @@ URL Params:
     "password": "1234"
  }
  ```
- 2. POST param {url}/users/register
+ * POST param {url}/users/register
  ```
  {
     "userName":"admin",
