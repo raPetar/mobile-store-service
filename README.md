@@ -21,7 +21,7 @@ URL Params:
 * /questions/{id}
 * /category
 
-**If using postman agent on local machine you can send additonal params from the body as JSON**
+**If using *postman* agent  you can send additonal params from the body as JSON**
 * POST param {url}/users/login 
    
  ```  
