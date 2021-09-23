@@ -1,9 +1,9 @@
 ﻿USE [master]
 GO
 /****** Object:  Database [MobileShop]    Script Date: 9/22/2021 8:13:41 PM ******/
-CREATE DATABASE [MobileStore1]
+CREATE DATABASE [MobileStore]
 GO
-USE [MobileStore1]
+USE [MobileStore]
 
 CREATE TABLE [dbo].[Categories](
 	[CategoryID] [int] IDENTITY(1,1) NOT NULL,
