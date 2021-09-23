@@ -2,7 +2,7 @@
 
 This is an WEB API for the [mobile-app-store](https://github.com/raPetar/mobile-store-service) project, developed in .net core 3.1
 
-## Try out the [DEMO](https://mobile-app-store-service.herokuapp.com/products) here
+## Try out the [DEMO API](https://mobile-app-store-service.herokuapp.com/products) here
 
 ## Installation
 1. Download and open the project using Visual Studio
